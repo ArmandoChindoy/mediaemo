@@ -1,0 +1,19 @@
+
+:root{
+    --color-primary:#000;
+    --color-secundary:#fff;
+    --color-gradient-start:rgba(5,84,94,1);
+    --color-gradient-end:#bbb;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    color: var(--color-secundary);
+    gap: 30px;
+    height: 100%;
+  }

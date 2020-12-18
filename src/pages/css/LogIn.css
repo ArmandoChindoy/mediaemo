@@ -1,0 +1,76 @@
+.logIn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logIn__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    width: 50%;
+    margin: 0 auto;
+    border: var(--color-secundary) 2px solid;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+    animation: back-ground-animation 10s infinite alternate;
+    background-size: 300%;
+}
+.logIn__container a{
+    color: #05545E;
+}
+.logIn__container--form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+}
+.logIn__container--form input{
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid var(--color-secundary);
+    background: none;
+    padding: 10px;
+    color:var(--color-secundary);
+    margin-bottom: 20px;
+}
+.logIn__container--form button{
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+}
+.logIn-form__passwordOptions{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.logIn-form__passwordOptions label{
+    display: flex;
+    align-items: baseline;  
+}
+.logIn__container--social-media{
+    align-self: start;
+    padding: 50px 0;
+}
+.logIn-social-media__item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 10px;
+}
+@keyframes back-ground-animation {
+    0%{background-position:right top}
+    100%{background-position:left bottom}
+}
+@media only screen and (max-width:600px){
+    .logIn__container{
+        width: 100%;
+    }
+}
