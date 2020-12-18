@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.af558a6d.chunk.css",
+    "main.js": "/static/js/main.0c01ae48.chunk.js",
+    "main.js.map": "/static/js/main.0c01ae48.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.abfa6eb4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.abfa6eb4.js.map",
+    "static/js/2.c097fc53.chunk.js": "/static/js/2.c097fc53.chunk.js",
+    "static/js/2.c097fc53.chunk.js.map": "/static/js/2.c097fc53.chunk.js.map",
+    "static/js/3.f4c27851.chunk.js": "/static/js/3.f4c27851.chunk.js",
+    "static/js/3.f4c27851.chunk.js.map": "/static/js/3.f4c27851.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.af558a6d.chunk.css.map": "/static/css/main.af558a6d.chunk.css.map",
+    "static/js/2.c097fc53.chunk.js.LICENSE.txt": "/static/js/2.c097fc53.chunk.js.LICENSE.txt",
+    "static/media/logo_platzi_video.435b1bef.png": "/static/media/logo_platzi_video.435b1bef.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abfa6eb4.js",
+    "static/js/2.c097fc53.chunk.js",
+    "static/css/main.af558a6d.chunk.css",
+    "static/js/main.0c01ae48.chunk.js"
+  ]
+}
