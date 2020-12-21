@@ -19,11 +19,11 @@ class LogIn extends React.Component{
                     </div>
                     <div className="logIn__container--social-media">
                         <div className="logIn-social-media__item">
-                        <i class="fab fa-google"></i>
+                        <i className="fab fa-google"></i>
                         <p>Log in with Google</p>
                         </div>
                         <span className="logIn-social-media__item">
-                        <i class="fab fa-twitter"></i>
+                        <i className="fab fa-twitter"></i>
                         <p>Log in with Twitter</p>
                         </span>
                     </div>

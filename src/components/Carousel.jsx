@@ -1,36 +1,66 @@
 import React from "react";
+import "./css/Carousel.css";
+import Carousel_item_photo from "./Carousel_item_photo";
+import Carousel_item_video from "./Carousel_item_video";
 class Carousel extends React.Component{
-    constructor(props){
-        super();
-        this.state={
-            image:props.image
-        }
-    }
     render(){
-        const {
-            image
-        }=this.state;
-        return(
-        <>
-            <section className="carousel container">
-                <div className="carousel__container">
-                    <div className="carousel-item active">
-                        <img  className="carousel-item__img" src={image} alt=""></img>
-                        <div className="carousel-item__description">
-                            <div className="carousel-item-description__btn btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                <button type="button" className="btn btn-outline-secondary"><i class="fas fa-play"></i></button>
-                                <button type="button" className="btn btn-outline-secondary"><i class="fas fa-pause"></i></button>
-                            </div>
-                            <div className="carousel-item__description__tittles">
-                                <h3 className="carousel-item__description__tittles--title">Title</h3>
-                                <p className="carousel-item__description__tittles--subtitle">Date</p>
-                            </div>
+        const{
+            images,
+            videos,
+            search
+        }=this.props
+        if(images){
+            console.log(images);
+            return(
+            <>
+                <h3 className="page-header carousel__title">Images</h3>
+                <section className="carousel container">
+                    {(images.length>0)
+                        ?<div className="carousel__container">
+                            {
+                                images.map(image=>{
+                                    return(
+                                    <Carousel_item_photo
+                                    key={image.id}
+                                    image={image.src.medium}
+                                    author={image.photographer}
+                                    />)
+                                })
+                            }
                         </div>
-                    </div>
-                </div>
-            </section>
-        </>
-        );
+                        :<p className="alert alert-primary">there is no {search} photos</p>
+                    }
+                </section>
+            </>
+            );
+        }
+        if(videos){
+            console.log(videos)
+            return(
+                <>
+                    <h3 className="page-header carousel__title">Videos</h3>
+                    <section className="carousel container">
+                        {
+                        (videos.length>0)
+                        ?<div className="carousel__container">
+                            {
+                                videos.map(video=>{
+                                    return(
+                                    <Carousel_item_video
+                                    key={video.id}
+                                    video={video.video_files[0].link}
+                                    author={video.user.name}
+                                    poster={video.image}
+                                    />)
+                                })
+                            }
+                        </div>
+                        :<p className="alert alert-primary">There is no {search} videos</p>
+                        }
+                    </section>
+                </>
+                );
+        }
     }
 }
 export default Carousel;

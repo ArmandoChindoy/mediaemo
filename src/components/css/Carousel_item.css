@@ -1,0 +1,29 @@
+.carousel-item__description{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(187,187,187,.8)50%,rgba(0,0,0,0)100%);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s;
+
+}
+.carousel-item:hover .carousel-item__description{
+    opacity: 1;
+}
+.carousel-item__description__tittles{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.carousel-item__description__tittles--title{
+    display: inline;
+    font-size: .8em;
+}

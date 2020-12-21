@@ -18,6 +18,10 @@
     background-color: rgba(255, 255, 255, .3);
     color: var(--color-secundary);
     max-width: 600px;
+    outline: none;
+}
+.searcher__input:active{
+    border: var(--color-secundary);
 }
 .searcher__input::placeholder{
     color: var(--color-secundary);
