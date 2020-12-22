@@ -1,5 +1,6 @@
 import './css/App.css';
 import Layout from './Layout';
+import Page404 from "../pages/404";
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,12 +15,9 @@ function App() {
     <Router>
       <Layout>
       <Switch>
-        <Route path='/login'>
-          <LogIn></LogIn>
-        </Route>
-        <Route path='/'>
-          <Home></Home>
-        </Route>
+        <Route exact path='/login' component={LogIn}/>
+        <Route exact path='/' component={Home}/>
+        <Route component={Page404}/>
       </Switch>
       </Layout>
     </Router>

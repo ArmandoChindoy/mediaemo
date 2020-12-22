@@ -10,7 +10,6 @@ class Carousel extends React.Component{
             search
         }=this.props
         if(images){
-            console.log(images);
             return(
             <>
                 <h3 className="page-header carousel__title">Images</h3>
@@ -35,7 +34,6 @@ class Carousel extends React.Component{
             );
         }
         if(videos){
-            console.log(videos)
             return(
                 <>
                     <h3 className="page-header carousel__title">Videos</h3>

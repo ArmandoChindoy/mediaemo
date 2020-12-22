@@ -52,7 +52,6 @@ class Home extends React.Component{
                 headers:headers
             })
             const data = await response.json();
-            console.log(data);
             return data;
         } catch (error) {
             this.setState({error:error.message})
@@ -71,8 +70,6 @@ class Home extends React.Component{
             loading:false,
             search:keyword,
         });
-        console.log(this.state.images);
-        console.log(this.state.videos);
     }
     componentDidUpdate(){
 

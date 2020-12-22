@@ -14,7 +14,7 @@ class LogIn extends React.Component{
                             <label>
                                 <input type="checkbox"/>Remember
                             </label>
-                            <p><a href="">I forgot my password</a></p>
+                            <p><a href="#">I forgot my password</a></p>
                         </div>
                     </div>
                     <div className="logIn__container--social-media">

@@ -5,7 +5,7 @@ class Navbar extends React.Component{
         return(
             <>
             <section className="searcher">
-                <h1 className="searcher__title">¿Que quieres ver hoy?</h1>
+                <h1 className="searcher__title">What do you want to view today?</h1>
                 <input onKeyDown={event => this.props.search(event)} className="searcher__input" type="text" placeholder="Search..."></input>
             </section>
             </>

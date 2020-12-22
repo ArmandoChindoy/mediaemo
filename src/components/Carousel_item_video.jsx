@@ -9,7 +9,6 @@ class Carousel_item_video extends React.Component{
         }=this.props
         return(<>
             <div className="carousel-item active">
-
                 <video className="carousel-item__img"
                 onMouseOver={event => event.target.play()} 
                 onMouseOut={event => event.target.pause()} 
